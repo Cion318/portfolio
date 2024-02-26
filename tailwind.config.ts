@@ -7,11 +7,31 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+      "3xl": "1900px",
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      colors: {
+        "bg-dark-900": "#151515",
+        "bg-dark-100": "#222222",
+        "bg-dark-50": "#393939",
+        "text-dark-900": "#FFFFFF",
+        "text-dark-700": "#E9E9E9",
+        "skin-color": "#2f9fea",
+      },
+      fontFamily: {
+        clicker: ["Clicker Script", "cursive"],
+        poppins: ["Poppins", "sans-serif"],
       },
     },
   },
