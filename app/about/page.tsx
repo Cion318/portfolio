@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import {
-  PersonalData,
+  ContactData,
   SkillData1,
   SkillData2,
   EducationData,
@@ -50,6 +50,32 @@ const About = () => {
             entry into the IT industry to conceptualize and implement innovative
             technologies and applications.
           </p>
+        </div>
+
+        {/* Contact Information */}
+        <div className="relative flex flex-col flex-wrap items-center justify-around pb-16 pt-12 lg:flex-row">
+          {ContactData.map((contactData) => (
+            <div
+              className="mb-16 flex w-1/4 flex-col items-center"
+              key={contactData.name}
+            >
+              <contactData.icon className="text-2xl text-skin-color" />
+
+              <h4 className="mb-1 mt-4 text-base font-bold text-white">
+                {contactData.name}
+              </h4>
+              <p className="text-base font-normal text-text-dark-700">
+                {contactData.value.split("\n").map((item, key) => {
+                  return (
+                    <span key={key}>
+                      {item}
+                      <br />
+                    </span>
+                  );
+                })}
+              </p>
+            </div>
+          ))}
         </div>
 
         {/* Skills */}

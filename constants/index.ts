@@ -29,47 +29,18 @@ export const NavLinks = [
     icon: RxDashboard,
     link: "/projects",
   },
-  {
-    name: "/contact",
-    text: "Contact",
-    icon: RxClipboard,
-    link: "/contact",
-  },
 ];
 
 export const Socials = [
   {
     name: "LinkedIn",
     icon: RxLinkedinLogo,
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/in/alexander-avercenko-6b5a53258/",
   },
   {
     name: "GitHub",
     icon: RxGithubLogo,
     link: "https://www.github.com/cion318",
-  },
-];
-
-export const PersonalData = [
-  {
-    name: "Address:",
-    icon: IoMdHome,
-    value: "Ostpreußenstraße 4, 6xxxx",
-  },
-  {
-    name: "Phone:",
-    icon: IoMdPhonePortrait,
-    value: "01577 xxxxxxx",
-  },
-  {
-    name: "Email:",
-    icon: IoMail,
-    value: "alav@x.com",
-  },
-  {
-    name: "Birthday:",
-    icon: FaCalendarAlt,
-    value: "31.08.1993",
   },
 ];
 
@@ -171,6 +142,13 @@ export const EducationData = [
 
 export const ExperienceData = [
   {
+    title: "Collaboration in Family Business",
+    icon: FaCalendarAlt,
+    date: "2022 - present",
+    description:
+      "• Delivery and receipt of construction machinery \n• Carrying out maintenance and repair work",
+  },
+  {
     title: "Part-time Job",
     icon: FaCalendarAlt,
     date: "2019 - 2022",
@@ -211,16 +189,11 @@ export const ContactData = [
   {
     name: "Phone",
     icon: IoMdPhonePortrait,
-    value: "01577/294xxxx",
+    value: "01577/2945326",
   },
   {
     name: "Email",
     icon: IoMail,
-    value: "alavxxxxxxxxxxxxxxx@xxxxx.com",
-  },
-  {
-    name: "Website",
-    icon: FaGlobeEurope,
-    value: "xxxxxxx.github.io",
+    value: "alexander.avercenko@gmail.com",
   },
 ];
